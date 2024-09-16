@@ -1,5 +1,5 @@
 import "./card.css";
-const Card = () => {
+const Card = (props) => {
 	const photo =
 		"https://avatars.githubusercontent.com/u/149392018?s=400&u=d3aeb371064a686556a61983f5202bab15163a28&v=4";
 	return (
@@ -9,7 +9,7 @@ const Card = () => {
 				alt="My 3d anime"
 				className="photo"
 			/>
-			<h2 className="title">Dev Ajay</h2>
+			<h2 className="title">{props.title}</h2>
 			<p className="desc">I create Websites</p>
 		</div>
 	);
