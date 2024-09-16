@@ -1,13 +1,14 @@
-import Card from "./Card";
-import List from "./List";
-import UserGreeting from "./UserGreeting";
+// import Card from "./Card";
+// import List from "./List";
+// import UserGreeting from "./UserGreeting";
 // const titles = ["Dev ajay", "Dev Mark", "Dev Joyce"];
+import ShoppingCart from "./ShoppingCart";
+import Button from "./Button";
 
 function App() {
 	return (
 		<>
-			{/* <UserGreeting isLoggedIn={true} username="Dev Ajay" /> */}
-			<List />
+			<ShoppingCart />
 		</>
 	);
 }
