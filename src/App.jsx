@@ -1,12 +1,13 @@
 import Card from "./Card";
-const titles = ["Dev ajay", "Dev Mark", "Dev Joyce"];
+import List from "./List";
+import UserGreeting from "./UserGreeting";
+// const titles = ["Dev ajay", "Dev Mark", "Dev Joyce"];
 
 function App() {
 	return (
 		<>
-			<Card title={titles[0]} />
-			<Card title={titles[1]} />
-			<Card title={titles[2]} />
+			{/* <UserGreeting isLoggedIn={true} username="Dev Ajay" /> */}
+			<List />
 		</>
 	);
 }
