@@ -29,8 +29,3 @@ const ShoppingCart = () => {
 };
 
 export default ShoppingCart;
-onClick={() => handleRemoveFood(index)}
-
-function handleRemoveFood(index) {
-		setFoods(foods.filter((_, i) => i !== index));
-	}

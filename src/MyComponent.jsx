@@ -19,13 +19,20 @@ const MyComponent = () => {
 			newFood, // add new food
 		]);
 	}
-
+	function handleRemoveFood(index) {
+		setFoods(foods.filter((_, i) => i !== index));
+	}
 	return (
 		<div>
 			<h2>List of foods</h2>
 			<ul>
 				{foods.map((food, index) => (
-					<li key={index}>{food}</li>
+					<li
+						key={index}
+						onClick={() => handleRemoveFood(index)}
+					>
+						{food}
+					</li>
 				))}
 			</ul>
 			<input
