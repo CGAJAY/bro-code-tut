@@ -9,10 +9,10 @@ const UserProfile = () => {
 	});
 
 	// Function to update the age
-	const updateAge = () => {
+	const updateAge = (e) => {
 		setUser((prevUser) => ({
 			...prevUser, // Copy all other properties
-			age: prevUser.age + 1, // Only update age
+			age: e.target.value, // Only update age
 		}));
 	};
 
@@ -20,9 +20,13 @@ const UserProfile = () => {
 		<div>
 			<h2>User Profile</h2>
 			<p>Name: {user.name}</p>
-			<p>Age: {user.age}</p>
+			<input
+				type="number"
+				value={user.age}
+				onChange={updateAge}
+			/>
+			<p>age: {user.age}</p>
 			<p>Location: {user.location}</p>
-			<button onClick={updateAge}>Increase Age</button>
 		</div>
 	);
 };

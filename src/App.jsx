@@ -5,12 +5,13 @@
 // import ShoppingCart from "./ShoppingCart";
 // import Button from "./Button";
 // import ColorPicker from "./ColorPicker";
-import UserProfile from "./UserProfile";
+// import UserProfile from "./UserProfile";
+import MyComponent from "./MyComponent.jsx";
 
 function App() {
 	return (
 		<>
-			<UserProfile />
+			<MyComponent />
 		</>
 	);
 }
