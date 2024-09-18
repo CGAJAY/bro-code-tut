@@ -45,6 +45,13 @@ const Yard = () => {
 		setCarModel(e.target.value);
 	}
 
+	// Function to handle removing a car from the list
+	function handleRemoveCar(index) {
+		setCars((prevCars) =>
+			prevCars.filter((cars, i) => i !== index)
+		);
+	}
+
 	return (
 		<div>
 			<h2>List of Car objects</h2>
@@ -52,7 +59,7 @@ const Yard = () => {
 			{/* Display the list of cars */}
 			<ul>
 				{cars.map((car, i) => (
-					<li key={i}>
+					<li key={i} onClick={() => handleRemoveCar(i)}>
 						{/* Display year, make, and model of each car */}
 						{car.year} {car.make} {car.model}
 					</li>
