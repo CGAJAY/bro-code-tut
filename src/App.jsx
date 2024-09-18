@@ -6,12 +6,13 @@
 // import Button from "./Button";
 // import ColorPicker from "./ColorPicker";
 // import UserProfile from "./UserProfile";
-import MyComponent from "./MyComponent.jsx";
+// import MyComponent from "./MyComponent.jsx";
+import Yard from "../Yard";
 
 function App() {
 	return (
 		<>
-			<MyComponent />
+			<Yard />
 		</>
 	);
 }
